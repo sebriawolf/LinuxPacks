@@ -1,0 +1,19 @@
+# 创建ssh
+ssh -keygen -t rsa -C "email-address@mail.com"
+# 获取公钥
+cd ~/.ssh
+cat id_rsa.pub
+# 本地仓git化
+git init
+# 远程克隆
+git clone git@github.com:userName/yourRepository
+# 本地文件与远程关联
+git remote add origin git@github.com:userName/yourRepos
+# 添加文件
+git add fileName
+# 添加提交说明
+git commit -m"文件说明"
+# 提交推送
+git push origin master
+# 拉取主分支
+git pull origin master
